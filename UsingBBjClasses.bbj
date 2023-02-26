@@ -1,0 +1,15 @@
+use ::BBjClasses.bbj::someClass
+use ::BBjClasses.bbj::someOtherClass
+
+declare someClass a!
+a! = new someClass()
+a!.setsomeInstanceString("TEST")
+? a!.getsomeInstanceString()
+? a!.getSomeString()
+
+? someClass.getSomeString()
+? someOtherClass.getSomeString()
+
+x! = new someOtherClass("ABC")
+? x!.getsomeInstanceString()
+? x!.getSomeString()
